@@ -19,4 +19,6 @@ spec:
           env:
             - name: AUTH_URL
               # value: localhost # IMPORTANT; in the same pod two containers can connect using localhost
+              # approach 3:
+              value: "auth-service.default" # you can pass the service name and namespace of that that you can get through kubectl get namespaces
 
