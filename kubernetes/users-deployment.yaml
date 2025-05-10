@@ -16,6 +16,9 @@ spec:
         - name: users
           image: amirjfr/kub-demo-user
           imagePullPolicy: Always
+          env:
+            - name: AUTH_URL
+              value: localhost
         - name: auth
           image: amirjfr/kub-demo-auth
           imagePullPolicy: Always
