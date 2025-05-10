@@ -18,7 +18,5 @@ spec:
           imagePullPolicy: Always
           env:
             - name: AUTH_URL
-              value: localhost # IMPORTANT; in the same pod two containers can connect using localhost
-        - name: auth
-          image: amirjfr/kub-demo-auth
-          imagePullPolicy: Always
+              # value: localhost # IMPORTANT; in the same pod two containers can connect using localhost
+

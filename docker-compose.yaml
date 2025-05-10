@@ -6,6 +6,7 @@ services:
     build: ./users-api
     environment:
       AUTH_URL: auth
+      AUTH_SERVICE_SERVICE_HOST: auth # in Docker this autho gerenated k8s service ip address is missing so we use the env variable
     ports: 
       - "8080:8080"
   tasks:
